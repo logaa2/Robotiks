@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "robotiks:silicon"
+    }
+  },
+  "result": {
+    "item": "robotiks:silicon_block"
+  }
+}

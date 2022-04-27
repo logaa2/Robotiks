@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "copper_ingot",
+  "ingredients": [
+    {
+      "item": "robotiks:silicon_block"
+    }
+  ],
+  "result": {
+    "item": "robotiks:silicon",
+    "count": 9
+  }
+}
