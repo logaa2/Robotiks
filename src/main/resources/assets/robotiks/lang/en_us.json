@@ -1,7 +1,10 @@
 {
   "item.robotiks.silicon": "Silicon",
+  "item.robotiks.basic_hammer": "Hammer",
 
   "block.robotiks.silicon_block": "Silicon Block",
 
-  "itemGroup.robotikstab": "Robotiks"
+  "itemGroup.robotikstab": "Robotiks",
+
+  "item.tutorialmod.dowsing_rod.no_valuables": "No valuables found!"
 }
