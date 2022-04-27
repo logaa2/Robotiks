@@ -1,5 +1,6 @@
 package net.logaa.robotiks.item.custom;
 
+import net.logaa.robotiks.api.MultiblockHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -22,20 +23,18 @@ public class BasicHammerItem extends Item {
             Player player = pContext.getPlayer();
             boolean foundBlock = false;
 
-            for(int i = 0; i <= positionClicked.getY() + 64; i++) {
-                Block blockBelow = pContext.getLevel().getBlockState(positionClicked.below(i)).getBlock();
-
-                if(isValuableBlock(blockBelow)) {
-                    outputValuableCoordinates(positionClicked.below(i), player, blockBelow);
-                    foundBlock = true;
-                    break;
-                }
-            }
-
-            if(!foundBlock) {
+            Block blockClicked = pContext.getLevel().getBlockState(positionClicked).getBlock();
+            if(isValuableBlock(blockClicked)){
+                outputValuableCoordinates(positionClicked, player, blockClicked);
+                foundBlock = true;
+                MultiblockHandler.MultiblockStructureIdentifier();
+            }else if
+            (!foundBlock) {
                 player.sendMessage(new TranslatableComponent("item.tutorialmod.dowsing_rod.no_valuables"),
                         player.getUUID());
             }
+
+
         }
 
         pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(),
@@ -45,13 +44,12 @@ public class BasicHammerItem extends Item {
     }
 
 
-    private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockBelow) {
-        player.sendMessage(new TextComponent("Found " + blockBelow.asItem().getRegistryName().toString() + " at " +
+    private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockClicked) {
+        player.sendMessage(new TextComponent("Found " + blockClicked.asItem().getRegistryName().toString() + " at " +
                 "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), player.getUUID());
     }
 
     private boolean isValuableBlock(Block block) {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE;
+        return block == Blocks.BLAST_FURNACE;
     }
 }
