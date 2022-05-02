@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:small_electrodes"
+          "name": "robotiks:small_electrodes"
         }
       ],
       "conditions": [

@@ -2,6 +2,7 @@ package net.logaa.robotiks.item;
 
 import net.logaa.robotiks.Robotiks;
 import net.logaa.robotiks.item.custom.BasicHammerItem;
+import net.logaa.robotiks.item.custom.blockChecker;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,8 +18,18 @@ public class ModItems {
     public static final RegistryObject<Item> SILICON = ITEMS.register("silicon",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ROBOTIKS_TAB)));
 
+    public static final RegistryObject<Item> IRON_STICK = ITEMS.register("iron_stick",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ROBOTIKS_TAB)));
+
+    public static final RegistryObject<Item> SILICON_BOARD = ITEMS.register("silicon_board",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ROBOTIKS_TAB)));
+
+
+    //TOOLS
     public static final RegistryObject<Item> BASIC_HAMMER = ITEMS.register("basic_hammer",
             () -> new BasicHammerItem(new Item.Properties().tab(ModCreativeModeTab.ROBOTIKS_TAB).durability(128)));
+
+
 
 
     /* ITEMS */

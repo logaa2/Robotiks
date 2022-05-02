@@ -197,6 +197,8 @@ public class SmallElectricArcFurnace {
     }
     private static int checkBlockType(BlockPos blockPositionClicked, UseOnContext pContext) {
         Block block = pContext.getLevel().getBlockState(blockPositionClicked).getBlock();
+        String smoothStoneConnector = "net.minecraftforge.registries";
+        String smallElectrodes = "Block{robotiks:small_electrodes}";
 
         if(block == Blocks.BLAST_FURNACE){
             return 1;
@@ -204,9 +206,9 @@ public class SmallElectricArcFurnace {
             return 2;
         }else if(block == Blocks.HOPPER){
             return 3;
-        }else if(block.equals(ModBlocks.SMOOTH_STONE_CONNECTOR)){
+        }else if(block.equals(ModBlocks.SMOOTH_STONE_CONNECTOR.get())){
             return 4;
-        }else if(block.equals(ModBlocks.SMALL_ELECTRODES) ){
+        }else if(block.equals(ModBlocks.SMALL_ELECTRODES.get())){
             return 5;
         }
         return 0;

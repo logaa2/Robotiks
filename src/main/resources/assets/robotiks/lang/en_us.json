@@ -1,10 +1,14 @@
 {
   "item.robotiks.silicon": "Silicon",
+  "item.robotiks.silicon_board": "Silicon Board",
   "item.robotiks.basic_hammer": "Hammer",
+  "item.robotiks.iron_stick": "Iron Stick",
 
   "block.robotiks.silicon_block": "Silicon Block",
   "block.robotiks.smooth_stone_connector": "Smooth Stone Connector",
   "block.robotiks.small_electrodes": "Small Electrodes",
+  "block.robotiks.iron_torch": "Iron Torch",
+  "block.robotiks.small_electrodes_mold": "Small Electrodes Mold",
 
   "itemGroup.robotikstab": "Robotiks",
 

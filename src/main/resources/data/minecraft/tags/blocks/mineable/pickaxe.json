@@ -3,6 +3,7 @@
   "values": [
     "robotiks:silicon_block",
     "robotiks:smooth_stone_connector",
+    "robotiks:small_electrodes_mold",
     "robotiks:small_electrodes"
   ]
 }

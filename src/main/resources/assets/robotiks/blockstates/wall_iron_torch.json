@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "robotiks:block/wall_iron_torch"
+    },
+    "facing=north": {
+      "model": "robotiks:block/wall_iron_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "robotiks:block/wall_iron_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "robotiks:block/wall_iron_torch",
+      "y": 180
+    }
+  }
+}
