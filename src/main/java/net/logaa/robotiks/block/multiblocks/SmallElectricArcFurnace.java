@@ -197,16 +197,16 @@ public class SmallElectricArcFurnace {
     }
     private static int checkBlockType(BlockPos blockPositionClicked, UseOnContext pContext) {
         Block block = pContext.getLevel().getBlockState(blockPositionClicked).getBlock();
-        ModBlocks robotiksBlocks = pContext.getLevel().getBlockState(blockPositionClicked).getBlock();
+
         if(block == Blocks.BLAST_FURNACE){
             return 1;
         }else if(block == Blocks.SMOOTH_STONE){
             return 2;
         }else if(block == Blocks.HOPPER){
             return 3;
-        }else if(robotiksBlocks.equals(ModBlocks.SMOOTH_STONE_CONNECTOR)){
+        }else if(block.equals(ModBlocks.SMOOTH_STONE_CONNECTOR)){
             return 4;
-        }else if(robotiksBlocks.equals(ModBlocks.SMALL_ELECTRODES) ){
+        }else if(block.equals(ModBlocks.SMALL_ELECTRODES) ){
             return 5;
         }
         return 0;
