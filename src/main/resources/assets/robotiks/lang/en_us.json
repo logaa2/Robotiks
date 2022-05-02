@@ -3,8 +3,10 @@
   "item.robotiks.basic_hammer": "Hammer",
 
   "block.robotiks.silicon_block": "Silicon Block",
+  "block.robotiks.smooth_stone_connector": "Smooth Stone Connector",
+  "block.robotiks.small_electrodes": "Small Electrodes",
 
   "itemGroup.robotikstab": "Robotiks",
 
-  "item.tutorialmod.dowsing_rod.no_valuables": "No valuables found!"
+  "item.tutorialmod.dowsing_rod.no_valuables": "Hammer failed!"
 }

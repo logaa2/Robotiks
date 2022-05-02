@@ -8,6 +8,7 @@ public class ModCreativeModeTab {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.SILICON.get());
+
         }
     };
 }

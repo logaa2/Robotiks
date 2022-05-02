@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "robotiks:silicon_block"
+    "robotiks:silicon_block",
+    "robotiks:smooth_stone_connector",
+    "robotiks:small_electrodes"
   ]
 }

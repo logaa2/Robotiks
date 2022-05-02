@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "robotiks:block/small_electrodes",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "robotiks:block/small_electrodes",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "robotiks:block/small_electrodes"
+    },
+    "facing=south": {
+      "model": "robotiks:block/small_electrodes",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "robotiks:block/small_electrodes"
+    },
+    "facing=west": {
+      "model": "robotiks:block/small_electrodes",
+      "y": 270
+    }
+  }
+}

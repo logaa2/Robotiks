@@ -27,7 +27,7 @@ public class BasicHammerItem extends Item {
             if(isValuableBlock(blockClicked)){
                 outputValuableCoordinates(positionClicked, player, blockClicked);
                 foundBlock = true;
-                MultiblockHandler.MultiblockStructureIdentifier();
+                MultiblockHandler.MultiblockStructureIdentifier(blockClicked, positionClicked, pContext);
             }else if
             (!foundBlock) {
                 player.sendMessage(new TranslatableComponent("item.tutorialmod.dowsing_rod.no_valuables"),
@@ -46,7 +46,7 @@ public class BasicHammerItem extends Item {
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockClicked) {
         player.sendMessage(new TextComponent("Found " + blockClicked.asItem().getRegistryName().toString() + " at " +
-                "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), player.getUUID());
+                "(" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"), player.getUUID());
     }
 
     private boolean isValuableBlock(Block block) {

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#N",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lightning_rod"
+    },
+    "X": {
+      "item": "minecraft:water_bucket"
+    },
+    "N": {
+      "item": "minecraft:lava_bucket"
+    }
+  },
+  "result": {
+    "item": "robotiks:smooth_stone_connector"
+  }
+}
