@@ -70,7 +70,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SMALL_ELECTRODES_MOLD = registerBlock("small_electrodes_mold", ()-> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.ROBOTIKS_TAB);
 
     public static final RegistryObject<Block> IRON_TORCH = registerBlock("iron_torch",()-> new TorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel(lightLevel).sound(SoundType.WOOD), ParticleTypes.FLAME), ModCreativeModeTab.ROBOTIKS_TAB);
-    public static final RegistryObject<Block> WALL_IRON_TORCH = registerBlock("wall_iron_torch",()-> new WallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel(lightLevel).sound(SoundType.WOOD), ParticleTypes.FLAME), ModCreativeModeTab.ROBOTIKS_TAB);
+    public static final RegistryObject<Block> WALL_IRON_TORCH = registerBlock("wall_iron_torch",()-> new WallTorchBlock(BlockBehaviour.Properties.of(Material.DECORATION).noCollission().instabreak().lightLevel(lightLevel).sound(SoundType.WOOD).dropsLike(ModBlocks.IRON_TORCH.get()), ParticleTypes.FLAME), ModCreativeModeTab.ROBOTIKS_TAB);
 
     /* BLOCKS */
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

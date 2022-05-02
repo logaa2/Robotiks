@@ -1,10 +1,13 @@
 package net.logaa.robotiks.item;
 
 import net.logaa.robotiks.Robotiks;
+import net.logaa.robotiks.block.ModBlocks;
 import net.logaa.robotiks.item.custom.BasicHammerItem;
 import net.logaa.robotiks.item.custom.blockChecker;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -23,6 +26,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SILICON_BOARD = ITEMS.register("silicon_board",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.ROBOTIKS_TAB)));
+
+    public static final RegistryObject<Item> IRON_TORCH = ITEMS.register("iron_torch", () -> new StandingAndWallBlockItem(ModBlocks.IRON_TORCH.get(), ModBlocks.WALL_IRON_TORCH.get(), (new Item.Properties()).tab(ModCreativeModeTab.ROBOTIKS_TAB)));
 
 
     //TOOLS
